@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .dashboard-container {
+            width: 200%;
+            max-width: 1800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .dashboard-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .dashboard-header h1 {
+            font-size: 2.5rem;
+            color: #3498DB;
+        }
+
+        .dashboard-header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: space-between; /* Distribute links horizontally */
+            margin-top: 20px;
+            flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+        }
+
+        .action-buttons a {
+            background-color: #3498DB;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            text-align: center;
+            width: 200px; /* Fixed width for each link */
+            margin: 10px; /* Spacing between the links */
+        }
+
+        .action-buttons a:hover {
+            background-color: #2980b9;
+        }
+
+        .action-buttons a:active {
+            background-color: #21618C;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .action-buttons a {
+                width: 100%; /* Full width on small screens */
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+
+        <!-- Action Buttons in a Single Row -->
+        <div class="action-buttons">
+            <a href="details.jsp">View Account Details</a>
+            <a href="balance.jsp">Check Balance</a>
+            <a href="deposit.html">Deposit</a>
+            <a href="withdraw.html">Withdraw</a>
+            <a href="transfer.html">Transfer Funds</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
